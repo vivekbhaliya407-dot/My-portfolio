@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek - Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a:hover {
+            color: #ffb86b;
+        }
+
+        /* First section */
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 60px 20px;
+            min-height: 80vh;
+        }
+
+        .leftsection {
+            width: 40%;
+            min-width: 280px;
+        }
+
+        .leftsection h1 {
+            font-size: 2.6rem;
+            margin-bottom: 15px;
+        }
+
+        .leftsection h1 span {
+            color: #ffb86b;
+        }
+
+        .leftsection p {
+            color: #b8b8e0;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 22px;
+            border: 2px solid #ffb86b;
+        }
+
+        .btn:hover {
+            background-color: #ffb86b;
+            color: rgb(0, 0, 33);
+        }
+
+        .rightsection {
+            width: 30%;
+            min-width: 240px;
+            height: 260px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(18, 18, 62);
+            border: 2px solid #ffb86b;
+            color: #b8b8e0;
+        }
+
+        /* Other sections */
+        section.page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        section.page h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        section.page p {
+            color: #b8b8e0;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skills span {
+            padding: 8px 18px;
+            background-color: rgb(18, 18, 62);
+            border: 1px solid #2a2a66;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project {
+            flex: 1 1 240px;
+            padding: 20px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        .project h3 {
+            margin-bottom: 8px;
+        }
+
+        .project p {
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(18, 18, 62);
+            color: #b8b8e0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vivek's Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                <h1>Hi, I'm <span>Vivek</span></h1>
+                <p>I'm a web developer who loves building  websites.</p>
+                <a class="btn" href="#projects">View my projects</a>
+            </div>
+            
+        </section>
+
+        <section class="page" id="about">
+            <h2>About</h2>
+            <p>
+                I am student learning new skills and building projects.
+                Currently pursuing my bachelors degree in computer scince.
+                i am really interested in technology and problem solving.
+                Right now, focusing on improving my communication skills and programming.
+                i am always looking for opportunity to learn something new and grow personally.
+
+            </p>
+        </section>
+
+        <section class="page" id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>Web Development</span>
+                <span>Logic Buildind</span>
+                <span>Coding syntax </span>
+                
+            </div>
+        </section>
+
+        <section class="page" id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>My personal website built with HTML, CSS and Js.</p>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="page" id="contact">
+            <h2>Contact</h2>
+            <p>Email: vivekbhaliya407@gmail.com</p>
+            <p>Address:Jarod,Vadodara,Gujrat.</p>
+            <a class="btn" href="mailto:vivekbhaliya407@gmail.com">Send me an email</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 Vivek
+    </footer>
+</body>
+
+</html>
